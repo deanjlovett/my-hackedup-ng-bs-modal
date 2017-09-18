@@ -5,15 +5,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from "@angular/router";
 import { ModalComponent } from './modal/modal.component';
 import { ModalService } from './modal/modal.service';
+import { ModalOutletComponent } from "./modal/modal-outlet.component";
 
 @NgModule({
-    imports: [BrowserModule],
+    imports: [BrowserModule, RouterModule],
     declarations: [
-        ModalComponent
+        ModalComponent,
+        ModalOutletComponent
     ],
     exports: [
         ModalComponent,
-        BrowserModule
+        ModalOutletComponent
     ]
 })
 export class ModalModule {
