@@ -29,6 +29,9 @@ export class ModalModule {
             imports: [
                 ModalModule,
                 RouterModule.forRoot(routes),
+            ],
+            exports: [
+                ModalModule
             ]
         })
         class InternalModalModule {
