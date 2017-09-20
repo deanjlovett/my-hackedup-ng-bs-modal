@@ -47,7 +47,7 @@ export class FirstModalComponent {
 
 Register one or more named modal dialogs using `ModalDialog.forRoot`:
 
-`Import the `ModalModule`, and configure it with named 
+`Import the 'ModalModule', and configure it with named 
 
 import { ModalModule, Modal } from 'ng-bootstrap-modal';
 import { FirstModalComponent } from "./first-modal.component";
