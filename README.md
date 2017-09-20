@@ -16,11 +16,12 @@ A component for modal dialogs
 Define one or more modals using the `modal` component.  Define sections in your modal dialog using the `modal-title`, `modal-body`, and `modal-footer` attributes. These define what will be placed inside the title, body, and footer sections of the modal dialog, respectively.
 
 For example: 
+
 `
 import { Component } from '@angular/core';
 
 @Component({
-  template: `
+  template: '
     <modal>
         <div modal-title>First Modal</div>
         <div modal-body>
@@ -37,7 +38,7 @@ import { Component } from '@angular/core';
 
         </div>
     </modal>
-  `
+  '
 })
 export class FirstModalComponent {
 }
