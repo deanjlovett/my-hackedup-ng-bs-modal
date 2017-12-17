@@ -6,8 +6,8 @@ Demo: https://angular-patterns.github.io/ng-bootstrap-modal/
 
 ## Pre-requisites
 
-*Bootstrap 3
-*Angular5+
+* Bootstrap 3
+* Angular5+
 
 ## Installation
 
