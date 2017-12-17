@@ -54,13 +54,6 @@ export class AppModule {
 
 ## Creating Component Dialogs
 
-Create a component dialog. Three components are available to use in the Dialog component template:
-
-1. modal-dialog -> element
-2. modal-header -> attribute
-3. modal-body -> attribute
-4. modal-footer (optional) -> attribute
-
 **dialog.component.html**
 
 There are three sections that you can customize - modal-header, modal-body, and modal-footer.
