@@ -1,11 +1,12 @@
 # ng-bootstrap-modal
 
-A component for modal dialogs.
+A Bootstrap component for creating modal dialogs.
 
 Demo: https://angular-patterns.github.io/ng-bootstrap-modal/
 
 ## Pre-requisites
 
+Bootstrap 3
 Angular5+
 
 ## Installation
@@ -61,6 +62,7 @@ Create a component dialog. Three components are available to use in the Dialog c
 4. modal-footer (optional) -> attribute
 
 **dialog.component.html**
+
 There are three sections that you can customize - modal-header, modal-body, and modal-footer.
 
 ```
