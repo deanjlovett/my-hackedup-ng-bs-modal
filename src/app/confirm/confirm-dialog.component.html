@@ -1,0 +1,16 @@
+<modal-dialog>
+    <h4 class="modal-title" modal-header>
+        Confirm Your Information
+    </h4>
+    <div modal-body>
+        <form [formGroup]="infoGroup">
+            <bs-input [formGroup]="infoGroup" label="Name" name="name" [value]="info.name"></bs-input>
+            <bs-input [formGroup]="infoGroup" label="Phone" name="phone" [value]="info.phone"></bs-input>
+            <bs-input [formGroup]="infoGroup" label="Birthdate" name="birthdate" [value]="info.birthdate"></bs-input>
+        </form>
+    </div>
+    <div modal-footer>
+        <button class="btn btn-primary btn-md" (click)="submit(infoGroup.value)">Submit</button>
+        <button class="btn btn-default btn-md" (click)="cancel()">Cancel</button>
+    </div>
+</modal-dialog>

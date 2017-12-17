@@ -12,17 +12,8 @@
  * Entry point for all public APIs of the core package.
  */
 
-export * from './src/modal.module';
-export * from './src/modal/modal.service';
-export * from './src/modal/modal.model';
-
-// This file only reexports content of the `src` folder. Keep it that way.
-// This is a hack to prevent people from turning on strictNullChecks. See #15432
-
-export declare interface ɵStrictNullChecksNotSupported {
-
-  dontUseStrictNullChecksWithAngularYetSeeIssue15432: string|null;
-
-  [key: string]: string;
-
-}
+export * from './src/modal/modal.module';
+export * from './src/modal/router-modal.module';
+export * from './src/modal/common-modal.module';
+export * from './src/modal/services/modal.service';
+export * from './src/modal/models/modal.model';
