@@ -1,6 +1,6 @@
 # ng-bootstrap-modal
 
-A Bootstrap component for creating modal dialogs.
+A fully customizable Bootstrap component for creating modal dialogs.
 
 Demo: https://angular-patterns.github.io/ng-bootstrap-modal/
 
