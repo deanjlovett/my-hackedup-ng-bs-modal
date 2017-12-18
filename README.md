@@ -16,7 +16,7 @@ ng-bootstrap-modal --save
 
 ## Setup
 
-# Importing the Module
+### Importing the Module
 
 If you are **not** using routes:
 
@@ -54,7 +54,7 @@ If you are using routes:
 export class AppModule {
 }
 ```
-## Adding the ModalOutlet
+### Adding the ModalOutlet
 
 Add a `modal-outlet` component to the `AppComponent`. This is where the modal dialog will be created in.
 
@@ -160,8 +160,6 @@ onOpenConfirm() {
     this.modalService.open('confirm');
 }
 ```
-
-
 
 ## Handling Ok and Cancel events
 
