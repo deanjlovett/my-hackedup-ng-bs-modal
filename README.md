@@ -17,7 +17,7 @@ npm install ng-bootstrap-modal --save
 
 If you are **not** using routes:
 
-```
+```Typescript
 @NgModule({
   imports:      [ 
       BrowserModule,
@@ -35,7 +35,7 @@ export class AppModule {
 ```
 If you are using routes:
 
-```
+```Typescript
 @NgModule({
   imports:      [ 
       BrowserModule,
@@ -58,7 +58,7 @@ export class AppModule {
 
 There are three sections that you can customize - modal-header, modal-body, and modal-footer.
 
-```
+```html
 <modal-dialog>
     <h4 class="modal-title" modal-header>
     ...
@@ -75,7 +75,7 @@ There are three sections that you can customize - modal-header, modal-body, and 
 
 For example, you can customize the footer by adding your own buttons:
 
-```
+```html
 <div modal-footer>
     <button class="btn btn-primary btn-md" (click)="submit()">Submit</button>
     <button class="btn btn-default btn-md" (click)="cancel()">Cancel</button>
@@ -91,7 +91,7 @@ Inject `ModalService`.
 
 Calling either will close the dialog and invoke the event handler.
 
-```
+```Typescript
 import { Component, OnInit } from '@angular/core';
 import { ModalService } from 'ng-bootstrap-modal';
 
@@ -124,7 +124,7 @@ Both modules have a static `forRoot` method where you can register component dia
 
 For example: 
 
-```
+```Typescript
 ModalDialog.forRoot([
     { name: 'test', component: DialogComponent },
     { name: 'alert', component: AlertDialogComponent },
@@ -133,7 +133,7 @@ ModalDialog.forRoot([
 ```
 You can then trigger the dialog by injecting `ModalService` and calling its `open` method:
 
-```
+```Typescript
 constructor(private modalService: ModalService) {
     
 }
@@ -157,7 +157,7 @@ You can subscribe to the Ok and Cancel events from the return value from the `op
 
 For example:
 
-```
+```Typescript
   onOpenAlert() {
     this.modalService.open('alert')
       .subscribe(t => {
@@ -174,7 +174,7 @@ For example:
 
 The second parameter to the `open` method accepts a parameter that you can pass to your dialog component.
 
-```
+```Typescript
   onOpenAlert() {
     this.modalService.open('alert', 'hey there');
   }
@@ -183,7 +183,7 @@ The second parameter to the `open` method accepts a parameter that you can pass 
 
 You can access the value from the dialog component by injecting `ModalService` and calling its `getValue()` method.
 
-```
+```Typescript
 import { Component, OnInit } from '@angular/core';
 import { ModalService } from 'ng-bootstrap-modal';
 
@@ -214,7 +214,7 @@ export class DialogComponent implements OnInit {
 
 The Ok method from the `ModalService` accepts an optional parameter that can be passed back to the Ok handler.
 
-```
+```Typescript
 import { Component, OnInit } from '@angular/core';
 import { ModalService } from 'ng-bootstrap-modal';
 
@@ -244,7 +244,7 @@ export class DialogComponent implements OnInit {
 
 The calling component can handle the returned value: 
 
-```
+```Typescript
   onOpenAlert() {
     this.modalService.open('alert')
       .subscribe(t => {
