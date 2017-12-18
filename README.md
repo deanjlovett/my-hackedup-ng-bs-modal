@@ -53,14 +53,14 @@ If you are using routes:
 export class AppModule {
 }
 ```
-# Adding the ModalOutlet
+## Adding the ModalOutlet
 
 Add a `modal-outlet` component to the `AppComponent`. This is where the modal dialog will be created in.
 
 **app.component.html**
 
 ```html
-<modal-outlet></modal-outlet.
+<modal-outlet></modal-outlet>.
 ```
 
 ## Creating Component Dialogs
