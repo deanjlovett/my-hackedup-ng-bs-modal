@@ -31,7 +31,7 @@ If you are **not** using routes:
   bootstrap:    [ AppComponent ],
   providers: [
   ],
-  exports: [AppComponent]
+  exports: []
 })
 export class AppModule {
 }
@@ -49,14 +49,14 @@ If you are using routes:
   bootstrap:    [ AppComponent ],
   providers: [
   ],
-  exports: [AppComponent]
+  exports: []
 })
 export class AppModule {
 }
 ```
 ### Adding the ModalOutlet
 
-Add a `modal-outlet` component to the `AppComponent`. This is where the modal dialog will be created in.
+Add a `modal-outlet` directive to the `AppComponent` template. This is where the modal dialog will be created in.
 
 **app.component.html**
 
