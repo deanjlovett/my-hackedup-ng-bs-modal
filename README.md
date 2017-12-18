@@ -11,7 +11,7 @@ Demo: https://angular-patterns.github.io/ng-bootstrap-modal/
 
 ## Installation
 
-npm install 
+npm install<br />
 ng-bootstrap-modal --save
 
 ## Setup
