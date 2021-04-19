@@ -6,3 +6,15 @@ e2e/app/**/*.js
 **/*.ngsummary.*
 **/*.metadata.json
 npm-debug.log
+
+
+package-lock.json
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# scratch files
+*scratch*
+*scratch*.*
+

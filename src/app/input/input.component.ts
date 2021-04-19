@@ -15,6 +15,9 @@ export class InputComponent implements OnInit {
     @Input() value: string;
     @Input() formGroup: FormGroup;
 
+    @Input() myTitle:   string;
+    @Input() myVerbage: string;
+
     constructor(fb:FormBuilder) {
         
      }

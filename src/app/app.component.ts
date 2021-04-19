@@ -19,7 +19,9 @@ export class AppComponent {
     this.info = {
       name: 'John',
       phone: 'Smith',
-      birthdate: new Date()
+      birthdate: new Date(),
+      myTitle: 'This is my Title Text, entered by Dean', // djl, new
+      myVerbage: 'This is my Verbage' // djl, new
     }; 
   }
   trigger() {
